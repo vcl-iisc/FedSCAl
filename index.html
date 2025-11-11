@@ -307,7 +307,7 @@
     <figure>
       <img src="static/images/fedscal_main_fig.png" alt="Method Overview" style="width:80%;">
       <p class="caption" style="text-align: left; margin-top: 0.5em;"> 
-Overview of the proposed <b>FedSCAI framework with Server and Client Alignment (SCAI)</b> implementation.
+<!-- Overview of the proposed <b>FedSCAI framework with Server and Client Alignment (SCAI)</b> implementation.
 The server communicates the global model <b>w<sup>r</sup></b> to the clients. 
 The clients then train their local models (<b>w<sup>r</sup><sub>k</sub></b>) using a weak augmentation <i>A<sub>w</sub></i>, 
 giving us the augmented image <i>A<sub>w</sub>(x<sup>i</sup><sub>k</sub>)</i>, 
@@ -315,8 +315,15 @@ and a strong augmentation <i>A<sub>s</sub></i> from which we get the augmented i
 <i>A<sub>s</sub>(x<sup>i</sup><sub>k</sub>)</i>. 
 The clients compute the client alignment loss: <i>L<sup>i</sup><sub>l,k</sub></i> and the server alignment loss: 
 <i>L<sup>i</sup><sub>g,k</sub></i> to perform the local training using Eq.&nbsp;12, 
-and then communicate the updated local models <b>w<sup>r</sup><sub>k</sub></b> to the server in the subsequent round for aggregation.
+and then communicate the updated local models <b>w<sup>r</sup><sub>k</sub></b> to the server in the subsequent round for aggregation. -->
 
+Overview of the proposed <b>FedSCAI framework with Server and Client Alignment (SCAI)</b> implementation. 
+The server communicates the global model \( \mathbf{w}^r \) to the clients, the clients then train their local models 
+(\( \mathbf{w}^r_k \)) using a weak augmentation \( A_w \) giving us the augmented image \( A_w(x^i_k) \), 
+and a strong augmentation \( A_s \) from which we get the augmented image \( A_s(x^i_k) \). 
+The clients compute the client alignment loss: \( L^{i}_{l,k} \) and the server alignment loss: \( L^{i}_{g,k} \)
+to perform the local training using the Eq.&nbsp;12, and then communicate the updated local models \( \mathbf{w}^r_k \)
+to the server in the subsequent round for aggregation.
 </p>
     </figure>
   </div>
